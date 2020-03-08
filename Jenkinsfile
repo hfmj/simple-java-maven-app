@@ -2,7 +2,7 @@ pipeline {
     agent {
         docker {
             image 'maven:3-alpine' 
-            args '-v /root/.m2:/var/maven/.m2 --rm --detach -e MAVEN_CONFIG=/var/maven/.m2'}
+            args ''}
     }
     stages {
         stage('Build') { 
