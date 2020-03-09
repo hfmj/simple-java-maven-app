@@ -2,7 +2,7 @@ pipeline {
     agent {
         docker {
             image 'maven:3.6.1-alpine' 
-            args ''}
+            args ' -u root -v /volume1/docker/jenkinsci/home:/root'}
     }
     stages {
         stage('Build') { 
